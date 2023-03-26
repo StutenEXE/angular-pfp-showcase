@@ -17,12 +17,14 @@
     max-width: 90%;
     max-height: 90%;
     transition: 300ms ease-in-out;
-    border-radius: 30px;  
+    border-radius: 30px; 
+    border: 2px solid transparent;
 }
 
 .pfp-container:hover {
     scale: 1.05;
     box-shadow: 0 0 20px var(--paragraph); 
+    border: 2px solid var(--paragraph);
 }
 
 .big-pfp-container {
