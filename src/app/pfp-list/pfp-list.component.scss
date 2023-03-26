@@ -1,0 +1,15 @@
+.pfp-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 20px;
+    column-gap: 20px;
+    padding: 40px 0;
+    margin: 3% 10%;
+}
+
+app-pfp {
+    width: 300px;
+    height: 300px;
+}

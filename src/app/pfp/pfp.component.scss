@@ -1,0 +1,83 @@
+.pfp-container {
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent);
+    border-radius: 30px;
+    transition: 300ms ease-in-out;
+}
+
+.pfp {
+    flex-shrink:0;
+    -webkit-flex-shrink: 0;
+    max-width: 90%;
+    max-height: 90%;
+    transition: 300ms ease-in-out;
+    border-radius: 30px;  
+}
+
+.pfp-container:hover {
+    scale: 1.05;
+    box-shadow: 0 0 20px var(--paragraph); 
+}
+
+.big-pfp-container {
+    z-index: 3;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 99vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    transition: opacity 300ms linear;
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 300ms linear;
+}
+
+.hide {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 300ms, opacity 300ms linear;
+}
+
+.big-pfp {
+    max-width: 70vw;
+    height: 70vh;
+    flex-shrink:0;
+    -webkit-flex-shrink: 0;
+    background-color: var(--accent);
+    border: 4px solid var(--background);
+    border-radius: 10vh;
+}
+
+.download-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5%;
+    padding: 2%;
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    transition: 300ms ease-in-out;
+}
+
+.download-icon {
+    height: 100%;
+    width: 100%;
+}
+
+.download-btn:hover {
+    background-color: var(--accent);
+}

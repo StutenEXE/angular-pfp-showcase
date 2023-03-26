@@ -1,0 +1,9 @@
+<div class="pfp-container" (click)="handleContainerClick()">
+    <img class="pfp" [src]="url">
+    <a class="download-btn" [href]="url" [download]="title">
+        <img class="download-icon" xlink:href="https://svgur.com/i/AFM.svg" src="../../assets/icons/download.svg">
+    </a>
+</div>
+<div class="big-pfp-container" [ngClass]="bigMode ? 'show' : 'hide'" (click)="handleContainerClick()">
+    <img class="big-pfp" [src]="url">
+</div>

@@ -1,0 +1,47 @@
+:root {
+    --background: #16161a;
+    --accent: #2cb67d;
+    --title: #fffffe;
+    --tertiary: #7f5af0;
+    --paragraph: #94a1b2;
+}
+
+body {
+    background-color: var(--background);
+    margin: 0;
+    z-index: 0;
+    font-family: "Space Mono", monospace;
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 400;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+p {
+    color: var(--paragraph);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Scrollbar bg */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 40px;
+    border: 3px solid transparent;
+    background-clip: padding-box;
+    transition: 300ms;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border: 0;
+}
